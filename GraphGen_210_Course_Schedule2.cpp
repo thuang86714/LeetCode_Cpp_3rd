@@ -33,7 +33,8 @@ ai != bi
 All the pairs [ai, bi] are distinct.
 
 */
-
+#include <bits/stdc++.h>
+using namespace std;
 class Solution {
 public:
     vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {

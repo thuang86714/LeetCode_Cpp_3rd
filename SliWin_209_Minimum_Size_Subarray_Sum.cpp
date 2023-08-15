@@ -29,7 +29,8 @@ Constraints:
 
 Follow up: If you have figured out the O(n) solution, try coding another solution of which the time complexity is O(n log(n)).
 */
-
+#include <bits/stdc++.h>
+using namespace std;
 class Solution {
 public:
     int minSubArrayLen(int target, vector<int>& nums) {

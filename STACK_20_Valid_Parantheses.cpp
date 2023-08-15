@@ -26,7 +26,8 @@ Constraints:
 
 1 <= s.length <= 104
 s consists of parentheses only '()[]{}'.
-*/
+*/#include <bits/stdc++.h>
+using namespace std;
 class Solution {
 public:
     bool isValid(string s) {

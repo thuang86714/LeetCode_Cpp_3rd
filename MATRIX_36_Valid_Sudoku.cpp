@@ -42,7 +42,8 @@ board.length == 9
 board[i].length == 9
 board[i][j] is a digit 1-9 or '.'.
 */
-
+#include <bits/stdc++.h>
+using namespace std;
 class Solution {
 public:
     bool isValidSudoku(vector<vector<char>>& board) {

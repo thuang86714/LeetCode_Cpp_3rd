@@ -36,7 +36,8 @@ Constraints:
 path consists of English letters, digits, period '.', slash '/' or '_'.
 path is a valid absolute Unix path.
 */
-
+#include <bits/stdc++.h>
+using namespace std;
 class Solution {
 public:
     string simplifyPath(string path) {

@@ -28,7 +28,8 @@ Constraints:
 1 <= s.length <= 2 * 105
 s consists only of printable ASCII characters.
 */
-
+#include <bits/stdc++.h>
+using namespace std;
 class Solution {
 public:
     bool isPalindrome(string s) {

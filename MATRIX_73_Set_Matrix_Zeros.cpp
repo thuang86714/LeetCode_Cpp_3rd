@@ -24,7 +24,8 @@ A straightforward solution using O(mn) space is probably a bad idea.
 A simple improvement uses O(m + n) space, but still not the best solution.
 Could you devise a constant space solution?
 */
-
+#include <bits/stdc++.h>
+using namespace std;
 class Solution {
 public:
     void setZeroes(vector<vector<int>>& matrix) {
