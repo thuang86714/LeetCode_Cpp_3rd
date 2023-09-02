@@ -20,31 +20,30 @@ struct TreeNode {
 class Solution {
 public:
     int countNodes(TreeNode* root) {
-        //TC O(logNlogN), SC O(logN)
-        //edge case: root is NULL
+        //TC O(logn^2), SC O(logn)
+        /*
+        Explanation credit goes to StefanPochmann
+        Since I halve the tree in every recursive step, 
+        I have O(log(n)) steps. Finding a height costs O(log(n)). So overall O(log(n)^2).
+        */
         if(!root)return NULL;
-
         int lh = 0, rh = 0;
-
-        //from the root, we would traverse down to the leaf,
-        //to see if the left most tree height == right most tree height
-        //if so, then return pow(2, lh)
         TreeNode *l = root, *r = root;
-        
 
+        //Finding the left height costs O(log(n))
         while(l){
             lh++;
             l = l->left;
         }
 
+        //Finding the right height costs O(log(n))
         while(r){
             rh++;
             r = r->right;
         }
 
         if(lh == rh)return pow(2, lh)-1;
-
-        return 1 + countNodes(root->left) + countNodes(root->right);
-
+        //I halve the tree in every recursive step
+        else return 1 + countNodes(root->left) + countNodes(root->right);
     }
 };
