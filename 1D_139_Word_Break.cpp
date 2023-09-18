@@ -30,6 +30,11 @@ Constraints:
 s and wordDict[i] consist of only lowercase English letters.
 All the strings of wordDict are unique.
 */
+#include <string>
+#include <unordered_set>
+#include <vector>
+ using namespace std;
+ 
 class Solution {
 public:
     bool wordBreak(string s, vector<string>& wordDict) {

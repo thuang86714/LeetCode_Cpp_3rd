@@ -37,6 +37,10 @@ All the integers of nums are unique.
 nums is sorted and rotated between 1 and n times.
 
 */
+
+#include <vector>
+using namespace std;
+
 class Solution {
 public:
     int findMin(vector<int>& nums) {
